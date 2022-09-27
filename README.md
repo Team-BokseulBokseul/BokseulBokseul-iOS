@@ -16,7 +16,7 @@ Server : 최지우, 조세훈
 디자인 : 
 figma
 
-iOS 개발 : 
+iOS : 
 UIKit, MVC,
 XCode 13.2 / iOS 15
 SnapKit
