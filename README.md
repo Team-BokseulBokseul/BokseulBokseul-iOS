@@ -1,7 +1,7 @@
 # 22sdc-ssu-free-subject-ios
 ### **팀원**
 
-PM : 홍준혁
+>PM : 홍준혁
 
 디자이너 : 김동현
 
