@@ -1,4 +1,4 @@
-# 22sdc-ssu-free-subject-ios
+# BokseulBokseul-iOS
 ### **팀원**
 
 PM : 홍준혁
