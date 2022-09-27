@@ -1,9 +1,15 @@
 # 22sdc-ssu-free-subject-ios
 ### **팀원**
 
-iOS : 2명
+PM : 홍준혁
 
-UI & UX 디자이너 : 1명
+디자이너 : 김동현
+
+iOS : 홍준혁, 김규철
+
+Android : 김현수, 김선환
+
+Server : 최지우, 조세훈
 
 ### **필요 스택**
 
