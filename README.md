@@ -1,16 +1,21 @@
 # 22sdc-ssu-free-subject-ios
 ### **팀원**
 
->PM : 홍준혁
+PM : 홍준혁
+
 디자이너 : 김동현
+
 iOS : 홍준혁, 김규철
+
 Android : 김현수, 김선환
+
 Server : 최지우, 조세훈
 
 ### **필요 스택**
 
->디자인 : 
+디자인 : 
 figma
+
 iOS : 
 UIKit, MVC,
 XCode 13.2 / iOS 15
@@ -18,7 +23,9 @@ SnapKit
 then
 FSCalendar
 CoreData, Realm
+
 Android 개발 : React Native
+
 Server : Spring Boot 
 
 ### **프로젝트 설명**
