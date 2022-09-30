@@ -26,7 +26,7 @@ CoreData, Realm
 
 Android 개발 : React Native
 
-Server : Spring Boot 
+Server : Spring Boot, MySQL
 
 ### **프로젝트 설명**
 
