@@ -65,7 +65,7 @@ Server : Spring Boot
 - remove : 파일 또는 코드, 리소스 제거
 - resource : 이미지 리소스, prefab 등의 코드와 상관없는 리소스 추가
 
-예시 
+예시 : 
 - resource : 이미지 리소스, prefab 등의 코드와 상관없는 리소스 추가
 - feat : Add translation to missing strings
 - feat : Disable publishing
