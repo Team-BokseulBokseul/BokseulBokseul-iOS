@@ -45,3 +45,30 @@ Server : Spring Boot
 1. 매일 정신질환을 앓는 환자의 상태를 입력받으며, 환자 상태의 변화 추이를 의료진이나 심리 상담사가 시각적으로 볼 수 있다.
 
 2. 약물의 효능을 모르고 먹는 환자들에게 약물의 효능을 소개하여 안심하고 약을 복약할 수 있도록 돕는다.
+
+
+### 협업 규칙
+#### 1. 브랜치 규칙
+
+`feature/{기능}`  형식
+
+예시 : feature/Login, feature/Chart
+
+### 2. Commit Message
+
+- feat : 새로운 기능 추가
+- fix : 버그 수정, 기능 수정
+- docs : 문서 수정
+- refactor : 코드 리팩토링 (변수명 수정 등)
+- test : 테스트 코드, 리팩토링 테스트 코드 추가
+- style : 코드 스타일 변경, 코드 자체 변경이 없는 경우
+- remove : 파일 또는 코드, 리소스 제거
+- resource : 이미지 리소스, prefab 등의 코드와 상관없는 리소스 추가
+
+예시 
+- resource : 이미지 리소스, prefab 등의 코드와 상관없는 리소스 추가
+feat : Add translation to missing strings
+feat : Disable publishing
+feat : Sort list context menu
+feat : Resize minimize/delete handle icons so they take up the entire topbar
+fix : Fix typo in cleanup.sh file
