@@ -54,7 +54,7 @@ Server : Spring Boot
 
 예시 : feature/Login, feature/Chart
 
-### 2. Commit Message
+#### 2. Commit Message
 
 - feat : 새로운 기능 추가
 - fix : 버그 수정, 기능 수정
