@@ -67,8 +67,8 @@ Server : Spring Boot
 
 예시 
 - resource : 이미지 리소스, prefab 등의 코드와 상관없는 리소스 추가
-feat : Add translation to missing strings
-feat : Disable publishing
-feat : Sort list context menu
-feat : Resize minimize/delete handle icons so they take up the entire topbar
-fix : Fix typo in cleanup.sh file
+- feat : Add translation to missing strings
+- feat : Disable publishing
+- feat : Sort list context menu
+- feat : Resize minimize/delete handle icons so they take up the entire topbar
+- fix : Fix typo in cleanup.sh file
