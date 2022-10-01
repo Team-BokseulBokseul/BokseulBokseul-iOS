@@ -29,7 +29,7 @@ class LineChartViewController: UIViewController, LineChartDelegate {
     
     lazy var tableView: UIView = {
         let view = UIView()
-        view.backgroundColor = UIColor(red: 0.74, green: 0.85, blue: 0.78, alpha: 1.00)
+        view.backgroundColor = .systemGray
         view.layer.cornerRadius = 16
         return view
     }()
@@ -39,7 +39,7 @@ class LineChartViewController: UIViewController, LineChartDelegate {
         read()
         view.addSubviews(tableView)
         
-        view.backgroundColor = UIColor(red: 0.94, green: 0.97, blue: 0.95, alpha: 1.0)
+        view.backgroundColor = .systemBackground
         var views: [String: AnyObject] = [:]
         
         label.text = "9월 누적 통계입니다."

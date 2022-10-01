@@ -17,6 +17,8 @@
 		9191481A28BB52710006BFC7 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9191481928BB52710006BFC7 /* CustomTabBarController.swift */; };
 		91B45FCB28C098B200BFF72D /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 91B45FCA28C098B200BFF72D /* Charts */; };
 		91BACC2E28E857210096DADE /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BACC2D28E857210096DADE /* ScheduleViewController.swift */; };
+		91BACC3528E85A6E0096DADE /* ConnectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BACC3428E85A6E0096DADE /* ConnectionViewController.swift */; };
+		91BACC3828E85AD70096DADE /* MyInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BACC3728E85AD70096DADE /* MyInfoViewController.swift */; };
 		91BED6D528C86BAD00837AFF /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91BED6D428C86BAD00837AFF /* Launch Screen.storyboard */; };
 		91BED6DB28C880ED00837AFF /* LineChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BED6DA28C880ED00837AFF /* LineChartViewController.swift */; };
 		91D85F1728BA4C9B009AAFDA /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D85F1628BA4C9A009AAFDA /* CalendarViewController.swift */; };
@@ -46,6 +48,8 @@
 		918D200D28D4F2C300C68EE2 /* LineChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChart.swift; sourceTree = "<group>"; };
 		9191481928BB52710006BFC7 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		91BACC2D28E857210096DADE /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		91BACC3428E85A6E0096DADE /* ConnectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionViewController.swift; sourceTree = "<group>"; };
+		91BACC3728E85AD70096DADE /* MyInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInfoViewController.swift; sourceTree = "<group>"; };
 		91BED6D428C86BAD00837AFF /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		91BED6DA28C880ED00837AFF /* LineChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartViewController.swift; sourceTree = "<group>"; };
 		91D85F1628BA4C9A009AAFDA /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +107,30 @@
 			path = ResetPage;
 			sourceTree = "<group>";
 		};
+		91BACC2F28E858BA0096DADE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				918D200D28D4F2C300C68EE2 /* LineChart.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		91BACC3328E85A500096DADE /* Connection */ = {
+			isa = PBXGroup;
+			children = (
+				91BACC3428E85A6E0096DADE /* ConnectionViewController.swift */,
+			);
+			path = Connection;
+			sourceTree = "<group>";
+		};
+		91BACC3628E85ABD0096DADE /* MyInfo */ = {
+			isa = PBXGroup;
+			children = (
+				91BACC3728E85AD70096DADE /* MyInfoViewController.swift */,
+			);
+			path = MyInfo;
+			sourceTree = "<group>";
+		};
 		C35EB12A28B35989006AFA0A = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +150,8 @@
 		C35EB13528B3598A006AFA0A /* FreeSubject */ = {
 			isa = PBXGroup;
 			children = (
+				91BACC3628E85ABD0096DADE /* MyInfo */,
+				91BACC3328E85A500096DADE /* Connection */,
 				91BACC2C28E8570C0096DADE /* ResetPage */,
 				91BACC2B28E855940096DADE /* Modal */,
 				C3CAE16828CA256300BD504D /* Main */,
@@ -185,7 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				91BED6DA28C880ED00837AFF /* LineChartViewController.swift */,
-				918D200D28D4F2C300C68EE2 /* LineChart.swift */,
+				91BACC2F28E858BA0096DADE /* View */,
 			);
 			path = Chart;
 			sourceTree = "<group>";
@@ -300,6 +330,7 @@
 				C3CAE16228CA250A00BD504D /* UIStackView+.swift in Sources */,
 				918D200E28D4F2C300C68EE2 /* LineChart.swift in Sources */,
 				91BED6DB28C880ED00837AFF /* LineChartViewController.swift in Sources */,
+				91BACC3528E85A6E0096DADE /* ConnectionViewController.swift in Sources */,
 				9191481A28BB52710006BFC7 /* CustomTabBarController.swift in Sources */,
 				C3CAE16128CA250A00BD504D /* UIView+.swift in Sources */,
 				C3CAE15F28CA250A00BD504D /* TodayQuestionView.swift in Sources */,
@@ -315,6 +346,7 @@
 				C3CAE15B28CA250A00BD504D /* ContentScrollView.swift in Sources */,
 				C3CAE15E28CA250A00BD504D /* EmojiView.swift in Sources */,
 				C3CAE16328CA250A00BD504D /* UIButton+.swift in Sources */,
+				91BACC3828E85AD70096DADE /* MyInfoViewController.swift in Sources */,
 				C3CAE16428CA250A00BD504D /* UIColor+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

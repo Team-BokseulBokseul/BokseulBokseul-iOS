@@ -45,7 +45,7 @@ class CalendarViewController: UIViewController,FSCalendarDelegate,FSCalendarData
     }
     
     func setView(){
-        view.backgroundColor = UIColor(red: 0.94, green: 0.97, blue: 0.95, alpha: 1.0)
+        view.backgroundColor = .systemBackground
         view.addSubview(fsCalendar)
         view.addSubview(goToThisMonth)
         fsCalendar.delegate = self
