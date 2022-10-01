@@ -16,6 +16,7 @@
 		918D200E28D4F2C300C68EE2 /* LineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918D200D28D4F2C300C68EE2 /* LineChart.swift */; };
 		9191481A28BB52710006BFC7 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9191481928BB52710006BFC7 /* CustomTabBarController.swift */; };
 		91B45FCB28C098B200BFF72D /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 91B45FCA28C098B200BFF72D /* Charts */; };
+		91BACC2E28E857210096DADE /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BACC2D28E857210096DADE /* ScheduleViewController.swift */; };
 		91BED6D528C86BAD00837AFF /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91BED6D428C86BAD00837AFF /* Launch Screen.storyboard */; };
 		91BED6DB28C880ED00837AFF /* LineChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BED6DA28C880ED00837AFF /* LineChartViewController.swift */; };
 		91D85F1728BA4C9B009AAFDA /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D85F1628BA4C9A009AAFDA /* CalendarViewController.swift */; };
@@ -44,6 +45,7 @@
 		911A171A28C1ABDB009B4376 /* CustomModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomModalViewController.swift; sourceTree = "<group>"; };
 		918D200D28D4F2C300C68EE2 /* LineChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChart.swift; sourceTree = "<group>"; };
 		9191481928BB52710006BFC7 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		91BACC2D28E857210096DADE /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		91BED6D428C86BAD00837AFF /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		91BED6DA28C880ED00837AFF /* LineChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartViewController.swift; sourceTree = "<group>"; };
 		91D85F1628BA4C9A009AAFDA /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +87,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		91BACC2B28E855940096DADE /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				911A171A28C1ABDB009B4376 /* CustomModalViewController.swift */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		91BACC2C28E8570C0096DADE /* ResetPage */ = {
+			isa = PBXGroup;
+			children = (
+				91BACC2D28E857210096DADE /* ScheduleViewController.swift */,
+			);
+			path = ResetPage;
+			sourceTree = "<group>";
+		};
 		C35EB12A28B35989006AFA0A = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +122,8 @@
 		C35EB13528B3598A006AFA0A /* FreeSubject */ = {
 			isa = PBXGroup;
 			children = (
+				91BACC2C28E8570C0096DADE /* ResetPage */,
+				91BACC2B28E855940096DADE /* Modal */,
 				C3CAE16828CA256300BD504D /* Main */,
 				C3CAE16728CA253B00BD504D /* Realm */,
 				C3CAE16628CA252E00BD504D /* Chart */,
@@ -156,7 +176,6 @@
 		C3CAE16528CA252300BD504D /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
-				911A171A28C1ABDB009B4376 /* CustomModalViewController.swift */,
 				91D85F1628BA4C9A009AAFDA /* CalendarViewController.swift */,
 			);
 			path = Calendar;
@@ -284,6 +303,7 @@
 				9191481A28BB52710006BFC7 /* CustomTabBarController.swift in Sources */,
 				C3CAE16128CA250A00BD504D /* UIView+.swift in Sources */,
 				C3CAE15F28CA250A00BD504D /* TodayQuestionView.swift in Sources */,
+				91BACC2E28E857210096DADE /* ScheduleViewController.swift in Sources */,
 				C35EB13728B3598A006AFA0A /* AppDelegate.swift in Sources */,
 				C3CAE15C28CA250A00BD504D /* MedicineCheckView.swift in Sources */,
 				C3CAE16028CA250A00BD504D /* EmojiStackView.swift in Sources */,
