@@ -9,12 +9,14 @@ import Foundation
 import UIKit
 import SnapKit
 
+
 class CustomTabBarController: UITabBarController{
     
     let homeVC = CalendarViewController()
     let statsVC = LineChartViewController()
     let connetVC = ConnectionViewController()
     let myInfoVC = MyInfoViewController()
+    let plusVC = CustomModalViewController()
     
     
     override func viewDidLoad() {
@@ -32,8 +34,9 @@ class CustomTabBarController: UITabBarController{
         tabBar.layer.applyShadow(color: .gray, alpha: 0.3, x: 0, y: 0, blur: 12)
         homeVC.title = "홈"
         statsVC.title = "통계"
-        connetVC.title = "연결"
         myInfoVC.title = "사용자"
+        connetVC.title = "연결"
+        
         
         
         

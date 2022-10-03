@@ -17,12 +17,23 @@ import Charts
 
 class CalendarViewController: UIViewController,FSCalendarDelegate,FSCalendarDataSource,FSCalendarDelegateAppearance{
     
+
     // 실제 날짜
     let realTime = Date()
 
     let fsCalendar = FSCalendar(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
     var selectedDate: Date = Date()
     let dateFormatter = DateFormatter()
+    
+    lazy var buttonForModal:UIButton = {
+        var btn = UIButton()
+        btn.setImage(UIImage(systemName: "plus"), for: .normal)
+        btn.addTarget(self, action: #selector(presentModalController), for: .touchUpInside)
+        btn.tintColor = .black
+        btn.layer.cornerRadius = 16
+        btn.backgroundColor = UIColor(red: 0.74, green: 0.86, blue: 0.79, alpha: 1.00)
+        return btn
+    }()
     
     lazy var goToThisMonth:UIButton = {
         var btn = UIButton()
@@ -48,6 +59,8 @@ class CalendarViewController: UIViewController,FSCalendarDelegate,FSCalendarData
         view.backgroundColor = .systemBackground
         view.addSubview(fsCalendar)
         view.addSubview(goToThisMonth)
+        view.addSubview(buttonForModal)
+        
         fsCalendar.delegate = self
         fsCalendar.dataSource = self
 //        resetDB()
@@ -70,6 +83,18 @@ class CalendarViewController: UIViewController,FSCalendarDelegate,FSCalendarData
             make.width.equalTo(34)
             make.height.equalTo(34)
         }
+        buttonForModal.snp.makeConstraints{ make in
+//            make.bottom.equalToSuperview().offset(-100)
+//            make.height.equalTo(100)
+//            make.leading.equalToSuperview().offset(150)
+//            make.width.equalTo(100)
+            make.top.equalTo(fsCalendar.snp.bottom).offset(10)
+            make.width.equalTo(34)
+            make.height.equalTo(34)
+            
+            make.centerX.equalTo(fsCalendar)
+            
+        }
 
     }
     
@@ -89,11 +114,11 @@ class CalendarViewController: UIViewController,FSCalendarDelegate,FSCalendarData
         fsCalendar.appearance.headerTitleFont = UIFont(name: "Avenir-Black", size: 22)
     }
     
-    // 날짜 선택 -> 콜백 메소드
+    
     func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
         let isThisToday: Bool = isToday(calendarDate: date, todayDate: self.realTime)
         dateFormatter.dateFormat = "YYYYMMdd"
-        presentModalController(inputDate: dateFormatter.string(from: date), isThisToday: isThisToday)
+        presentWriteController(inputDate: dateFormatter.string(from: date), isThisToday: isThisToday)
         
     }
     // 캘린더의 선택한 날과 실제 날짜를 비교해서 Bool 값 리턴
@@ -111,15 +136,22 @@ class CalendarViewController: UIViewController,FSCalendarDelegate,FSCalendarData
     
     
     // To be updated
-    func presentModalController(inputDate:String,isThisToday:Bool) {
-        let vc = CustomModalViewController()
-        vc.Date = inputDate
-        vc.isToday = isThisToday
+    func presentWriteController(inputDate:String,isThisToday:Bool) {
+        let vc = WriteViewController(isToday: true)
+//        vc.Date = inputDate
+//        vc.isToday = isThisToday
         vc.modalPresentationStyle = .overCurrentContext
         // keep false
         // modal animation will be handled in VC itself
         self.present(vc, animated: false)
     }
+  
+    @objc func presentModalController() {
+        let vc = CustomModalViewController()
+        vc.modalPresentationStyle = .overCurrentContext
+        self.present(vc, animated: false)
+    }
+    
 
     // 현재 달로 돌아오기 위한 함수
     @objc func currentBtnClicked(sender: UIButton!) {

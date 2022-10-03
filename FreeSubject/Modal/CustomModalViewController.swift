@@ -174,11 +174,11 @@ class CustomModalViewController: UIViewController{
         pvc.modalPresentationStyle = .fullScreen
         self.dismiss(animated: true) {
             pvc.present(ScheduleViewController(),animated: true,completion: nil)
+            
         }
+     
     }
-    
 
-    
     
     func setupPanGesture() {
         let panGesture = UIPanGestureRecognizer(target: self, action: #selector(self.handlePanGesture(gesture:)))

@@ -118,13 +118,13 @@ class WriteViewController: UIViewController {
 
         
         titleLabel.snp.makeConstraints {
-            $0.top.equalToSuperview().inset(27)
+            $0.top.equalToSuperview().inset(60)
             $0.centerX.equalToSuperview()
         }
     
         
         closeButton.snp.makeConstraints {
-            $0.top.equalToSuperview().inset(27)
+            $0.top.equalTo(titleLabel)
             $0.trailing.equalToSuperview().inset(14)
             $0.width.equalTo(34)
             $0.height.equalTo(34)
