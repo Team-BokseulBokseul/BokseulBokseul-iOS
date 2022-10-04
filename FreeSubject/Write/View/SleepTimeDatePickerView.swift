@@ -42,7 +42,7 @@ class SleepTimeDatePickerView: UIView {
     override init(frame: CGRect) {
         super.init(frame: .zero)
         
-        self.layer.backgroundColor = UIColor.customColor(.writeViewColor).cgColor
+        self.layer.backgroundColor = UIColor.customColor(.brandColor).cgColor
         self.layer.cornerRadius = 12
         configureDatePicker()
         setViewHierarchy()

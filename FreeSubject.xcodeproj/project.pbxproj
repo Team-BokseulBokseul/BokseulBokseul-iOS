@@ -12,6 +12,7 @@
 		690DDC9D28B7D5FB00C278E1 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 690DDC9C28B7D5FB00C278E1 /* Realm */; };
 		690DDC9F28B7D5FB00C278E1 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 690DDC9E28B7D5FB00C278E1 /* RealmSwift */; };
 		695C882728CF147D00AE977F /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695C882628CF147D00AE977F /* RealmService.swift */; };
+		69DBAA1E28EB4AEB003F4581 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DBAA1D28EB4AEB003F4581 /* OnBoardingViewController.swift */; };
 		911A171B28C1ABDB009B4376 /* CustomModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911A171A28C1ABDB009B4376 /* CustomModalViewController.swift */; };
 		918D200E28D4F2C300C68EE2 /* LineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918D200D28D4F2C300C68EE2 /* LineChart.swift */; };
 		9191481A28BB52710006BFC7 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9191481928BB52710006BFC7 /* CustomTabBarController.swift */; };
@@ -44,6 +45,7 @@
 
 /* Begin PBXFileReference section */
 		695C882628CF147D00AE977F /* RealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
+		69DBAA1D28EB4AEB003F4581 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
 		911A171A28C1ABDB009B4376 /* CustomModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomModalViewController.swift; sourceTree = "<group>"; };
 		918D200D28D4F2C300C68EE2 /* LineChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChart.swift; sourceTree = "<group>"; };
 		9191481928BB52710006BFC7 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
@@ -91,6 +93,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		69DBAA1B28EB4815003F4581 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		69DBAA1C28EB4A09003F4581 /* OnBoarding */ = {
+			isa = PBXGroup;
+			children = (
+				69DBAA1D28EB4AEB003F4581 /* OnBoardingViewController.swift */,
+			);
+			path = OnBoarding;
+			sourceTree = "<group>";
+		};
 		91BACC2B28E855940096DADE /* Modal */ = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +167,8 @@
 		C35EB13528B3598A006AFA0A /* FreeSubject */ = {
 			isa = PBXGroup;
 			children = (
+				69DBAA1C28EB4A09003F4581 /* OnBoarding */,
+				69DBAA1B28EB4815003F4581 /* Login */,
 				91BACC3628E85ABD0096DADE /* MyInfo */,
 				91BACC3328E85A500096DADE /* Connection */,
 				91BACC2C28E8570C0096DADE /* ResetPage */,
@@ -328,6 +347,7 @@
 				91D85F1728BA4C9B009AAFDA /* CalendarViewController.swift in Sources */,
 				C3CAE15D28CA250A00BD504D /* EmotionalCheckView.swift in Sources */,
 				C3CAE16228CA250A00BD504D /* UIStackView+.swift in Sources */,
+				69DBAA1E28EB4AEB003F4581 /* OnBoardingViewController.swift in Sources */,
 				918D200E28D4F2C300C68EE2 /* LineChart.swift in Sources */,
 				91BED6DB28C880ED00837AFF /* LineChartViewController.swift in Sources */,
 				91BACC3528E85A6E0096DADE /* ConnectionViewController.swift in Sources */,

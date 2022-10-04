@@ -80,7 +80,7 @@ class WriteViewController: UIViewController {
     lazy var saveButton = UIButton().then {
         $0.setTitle("저장", for: .normal)
         $0.isEnabled = false
-        $0.setBackgroundColor(.customColor(.writeViewColor), for: .normal)
+        $0.setBackgroundColor(.customColor(.brandColor), for: .normal)
         $0.setBackgroundColor(.gray, for: .disabled)
         $0.layer.cornerRadius = 16
         $0.clipsToBounds = true
