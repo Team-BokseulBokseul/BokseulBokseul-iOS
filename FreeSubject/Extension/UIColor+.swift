@@ -8,7 +8,7 @@
 import UIKit
 
 enum CustomColor {
-    case writeViewColor
+    case brandColor
     case defaultBackgroundColor
     case defaultGrayColor
     case UISwitchColor
@@ -27,8 +27,8 @@ extension UIColor {
 
     static func customColor(_ color: CustomColor) -> UIColor {
         switch color {
-        case .writeViewColor:
-            return UIColor(red: 0.67, green: 0.85, blue: 0.74, alpha: 1)
+        case .brandColor:
+            return UIColor(red: 0.105, green: 0.294, blue: 0.4, alpha: 1)
         case .defaultBackgroundColor:
             return UIColor(red: 0.118, green: 0.118, blue: 0.118, alpha: 1)
         case .defaultGrayColor:
