@@ -13,6 +13,9 @@
 		690DDC9F28B7D5FB00C278E1 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 690DDC9E28B7D5FB00C278E1 /* RealmSwift */; };
 		695C882728CF147D00AE977F /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695C882628CF147D00AE977F /* RealmService.swift */; };
 		69DBAA1E28EB4AEB003F4581 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DBAA1D28EB4AEB003F4581 /* OnBoardingViewController.swift */; };
+		69DBAA2128EC9BB5003F4581 /* ServiceTermViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DBAA2028EC9BB5003F4581 /* ServiceTermViewController.swift */; };
+		69DBAA2328ED597C003F4581 /* SignUPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DBAA2228ED597C003F4581 /* SignUPViewController.swift */; };
+		69DBAA2528ED6AF6003F4581 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DBAA2428ED6AF6003F4581 /* LoginViewController.swift */; };
 		911A171B28C1ABDB009B4376 /* CustomModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911A171A28C1ABDB009B4376 /* CustomModalViewController.swift */; };
 		918D200E28D4F2C300C68EE2 /* LineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918D200D28D4F2C300C68EE2 /* LineChart.swift */; };
 		9191481A28BB52710006BFC7 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9191481928BB52710006BFC7 /* CustomTabBarController.swift */; };
@@ -46,6 +49,9 @@
 /* Begin PBXFileReference section */
 		695C882628CF147D00AE977F /* RealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
 		69DBAA1D28EB4AEB003F4581 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
+		69DBAA2028EC9BB5003F4581 /* ServiceTermViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceTermViewController.swift; sourceTree = "<group>"; };
+		69DBAA2228ED597C003F4581 /* SignUPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUPViewController.swift; sourceTree = "<group>"; };
+		69DBAA2428ED6AF6003F4581 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		911A171A28C1ABDB009B4376 /* CustomModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomModalViewController.swift; sourceTree = "<group>"; };
 		918D200D28D4F2C300C68EE2 /* LineChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChart.swift; sourceTree = "<group>"; };
 		9191481928BB52710006BFC7 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
@@ -96,6 +102,7 @@
 		69DBAA1B28EB4815003F4581 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				69DBAA2428ED6AF6003F4581 /* LoginViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -106,6 +113,15 @@
 				69DBAA1D28EB4AEB003F4581 /* OnBoardingViewController.swift */,
 			);
 			path = OnBoarding;
+			sourceTree = "<group>";
+		};
+		69DBAA1F28EC98F1003F4581 /* SignUP */ = {
+			isa = PBXGroup;
+			children = (
+				69DBAA2028EC9BB5003F4581 /* ServiceTermViewController.swift */,
+				69DBAA2228ED597C003F4581 /* SignUPViewController.swift */,
+			);
+			path = SignUP;
 			sourceTree = "<group>";
 		};
 		91BACC2B28E855940096DADE /* Modal */ = {
@@ -167,6 +183,7 @@
 		C35EB13528B3598A006AFA0A /* FreeSubject */ = {
 			isa = PBXGroup;
 			children = (
+				69DBAA1F28EC98F1003F4581 /* SignUP */,
 				69DBAA1C28EB4A09003F4581 /* OnBoarding */,
 				69DBAA1B28EB4815003F4581 /* Login */,
 				91BACC3628E85ABD0096DADE /* MyInfo */,
@@ -343,6 +360,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69DBAA2528ED6AF6003F4581 /* LoginViewController.swift in Sources */,
 				C3CAE15A28CA250A00BD504D /* SleepTimeDatePickerView.swift in Sources */,
 				91D85F1728BA4C9B009AAFDA /* CalendarViewController.swift in Sources */,
 				C3CAE15D28CA250A00BD504D /* EmotionalCheckView.swift in Sources */,
@@ -361,6 +379,8 @@
 				91F040D828C646FA0049CAA7 /* Day.swift in Sources */,
 				911A171B28C1ABDB009B4376 /* CustomModalViewController.swift in Sources */,
 				C3CAE15928CA250A00BD504D /* WriteViewController.swift in Sources */,
+				69DBAA2128EC9BB5003F4581 /* ServiceTermViewController.swift in Sources */,
+				69DBAA2328ED597C003F4581 /* SignUPViewController.swift in Sources */,
 				C35EB13928B3598A006AFA0A /* SceneDelegate.swift in Sources */,
 				695C882728CF147D00AE977F /* RealmService.swift in Sources */,
 				C3CAE15B28CA250A00BD504D /* ContentScrollView.swift in Sources */,
